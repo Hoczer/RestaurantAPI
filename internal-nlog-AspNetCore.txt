@@ -136,3 +136,39 @@
 2023-02-09 18:45:39.2490 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
 2023-02-09 18:45:39.2737 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
 2023-02-09 18:45:39.7551 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 20:03:33.7828 Info Message Template Auto Format enabled
+2023-02-09 20:03:33.7828 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 20:03:33.8237 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 20:03:33.8237 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 20:03:33.8237 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 20:03:33.8276 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 20:03:33.8276 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 20:03:33.8276 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 20:03:33.8487 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 20:03:34.0325 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 20:03:34.0665 Info Shutdown() called. Logger closing...
+2023-02-09 20:03:34.0665 Info Closing old configuration.
+2023-02-09 20:03:34.0771 Info Logger has been closed down.
+2023-02-09 20:03:54.7334 Info Message Template Auto Format enabled
+2023-02-09 20:03:54.7334 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 20:03:54.7713 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 20:03:54.7713 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 20:03:54.7713 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 20:03:54.7713 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 20:03:54.7713 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 20:03:54.7713 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 20:03:54.7925 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 20:03:54.8986 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 20:03:54.9250 Info Shutdown() called. Logger closing...
+2023-02-09 20:03:54.9250 Info Closing old configuration.
+2023-02-09 20:03:54.9355 Info Logger has been closed down.
+2023-02-09 20:18:50.8585 Info Message Template Auto Format enabled
+2023-02-09 20:18:50.8585 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 20:18:50.9326 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 20:18:50.9326 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 20:18:50.9326 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 20:18:50.9373 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 20:18:50.9373 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 20:18:50.9373 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 20:18:50.9629 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 20:18:51.3842 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config

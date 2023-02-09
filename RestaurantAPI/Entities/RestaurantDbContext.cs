@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 
 namespace RestaurantAPI.Entities
 {
@@ -8,9 +9,18 @@ namespace RestaurantAPI.Entities
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Adress> Adresses { get; set; }
         public DbSet<Dish> Dishes { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .Property(u => u.Email)
+                .IsRequired();
+            modelBuilder.Entity<Role>()
+                .Property(u => u.Name)
+                .IsRequired();
+
             modelBuilder.Entity<Restaurant>()
                 .Property(r => r.Name)
                 .IsRequired()
