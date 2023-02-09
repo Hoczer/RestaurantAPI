@@ -1,0 +1,138 @@
+2023-02-09 15:45:47.5290 Info Message Template Auto Format enabled
+2023-02-09 15:45:47.5290 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 15:45:47.6250 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 15:45:47.6250 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 15:45:47.6250 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 15:45:47.6250 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 15:45:47.6250 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 15:45:47.6644 Info Validating config: Targets=5, ConfigItems=98, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 15:45:48.1830 Info Validating config: Targets=5, ConfigItems=98, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 15:52:08.6685 Info Message Template Auto Format enabled
+2023-02-09 15:52:08.6685 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 15:52:08.7413 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 15:52:08.7413 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 15:52:08.7413 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 15:52:08.7413 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 15:52:08.7413 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 15:52:08.7413 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 15:52:08.7647 Info Validating config: Targets=5, ConfigItems=104, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 15:52:09.2453 Info Validating config: Targets=5, ConfigItems=104, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 15:56:11.0164 Info Message Template Auto Format enabled
+2023-02-09 15:56:11.0164 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 15:56:11.0816 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 15:56:11.0816 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 15:56:11.0816 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 15:56:11.0816 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 15:56:11.0816 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 15:56:11.0816 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 15:56:11.1136 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 15:56:11.5891 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 15:58:30.2654 Info Message Template Auto Format enabled
+2023-02-09 15:58:30.2773 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 15:58:30.3366 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 15:58:30.3366 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 15:58:30.3366 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 15:58:30.3366 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 15:58:30.3401 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 15:58:30.3401 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 15:58:30.3616 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 15:58:30.8631 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 16:00:10.4353 Info Message Template Auto Format enabled
+2023-02-09 16:00:10.4353 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 16:00:10.5183 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 16:00:10.5183 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 16:00:10.5183 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 16:00:10.5183 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 16:00:10.5183 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 16:00:10.5183 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 16:00:10.5505 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 16:00:11.0674 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:16:44.3490 Info Message Template Auto Format enabled
+2023-02-09 17:16:44.3660 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 17:16:44.4489 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 17:16:44.4526 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:16:44.4526 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 17:16:44.4526 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 17:16:44.4526 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:16:44.4526 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 17:16:44.4877 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:16:45.1049 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:46:45.6094 Info Message Template Auto Format enabled
+2023-02-09 17:46:45.6094 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 17:46:45.6878 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 17:46:45.6878 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:46:45.6878 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 17:46:45.6878 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 17:46:45.6878 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:46:45.6878 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 17:46:45.7196 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:46:46.2503 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:51:24.2972 Info Message Template Auto Format enabled
+2023-02-09 17:51:24.3112 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 17:51:24.3769 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 17:51:24.3769 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:51:24.3769 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 17:51:24.3769 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 17:51:24.3769 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:51:24.3769 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 17:51:24.4030 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:51:24.8819 Info Validating config: Targets=5, ConfigItems=96, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:54:35.3189 Info Message Template Auto Format enabled
+2023-02-09 17:54:35.3291 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 17:54:35.3976 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 17:54:35.4463 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 17:54:35.4463 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 17:54:35.4521 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:54:35.4521 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 17:54:35.4521 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 17:54:35.4918 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:54:36.0702 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:55:32.1192 Info Message Template Auto Format enabled
+2023-02-09 17:55:32.1340 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 17:55:32.2092 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 17:55:32.2092 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 17:55:32.2092 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 17:55:32.2092 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 17:55:32.2092 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 17:55:32.2092 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 17:55:32.2395 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 17:55:32.7255 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 18:00:18.3333 Info Message Template Auto Format enabled
+2023-02-09 18:00:18.3409 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 18:00:18.3929 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 18:00:18.3929 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:00:18.3929 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 18:00:18.3929 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 18:00:18.3929 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:00:18.3929 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 18:00:18.4240 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 18:00:18.9656 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 18:23:40.5668 Info Message Template Auto Format enabled
+2023-02-09 18:23:40.5752 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 18:23:40.6414 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 18:23:40.6414 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:23:40.6414 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 18:23:40.6414 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 18:23:40.6414 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:23:40.6414 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 18:23:40.6725 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 18:26:15.0833 Info Message Template Auto Format enabled
+2023-02-09 18:26:15.0976 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 18:26:15.1897 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 18:26:15.1897 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:26:15.1897 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 18:26:15.1897 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 18:26:15.1897 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:26:15.1897 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 18:26:15.2232 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 18:26:15.7579 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 18:45:39.1827 Info Message Template Auto Format enabled
+2023-02-09 18:45:39.1929 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-09 18:45:39.2490 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-02-09 18:45:39.2490 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:45:39.2490 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-02-09 18:45:39.2490 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2023-02-09 18:45:39.2490 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-02-09 18:45:39.2490 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-02-09 18:45:39.2737 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-02-09 18:45:39.7551 Info Validating config: Targets=5, ConfigItems=94, FilePath=C:\Users\carra\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config

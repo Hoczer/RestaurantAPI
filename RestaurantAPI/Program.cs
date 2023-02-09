@@ -1,17 +1,63 @@
-var builder = WebApplication.CreateBuilder(args);
+using RestaurantAPI;
+using NLog.Web;
+using RestaurantAPI.Entities;
+using System.Reflection;
+using RestaurantAPI.Service;
+using NLog;
+using NLog.Web;
+using RestaurantAPI.Middleware;
 
-// Add services to the container.
+var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
+try
+{
+    var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+    logger.Debug("init main");
 
-var app = builder.Build();
+    // Add services to the container.
+    builder.Logging.ClearProviders();
+    builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+    builder.Host.UseNLog();
 
-// Configure the HTTP request pipeline.
+    builder.Services.AddControllers();
+    builder.Services.AddDbContext<RestaurantDbContext>();
+    builder.Services.AddScoped<RestaurantSeeder>();
+    builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+    builder.Services.AddScoped<IRestaurantService, RestaurantService>();
+    builder.Services.AddScoped<ErrorHandlingMiddleware>();
+    builder.Services.AddSwaggerGen();
+    builder.Services.AddScoped<RequestTimeMiddleware>();
+    builder.Services.AddScoped<IDishService, DishService>();
 
-app.UseHttpsRedirection();
+    var app = builder.Build();
 
-app.UseAuthorization();
+    // Configure the HTTP request pipeline.
 
-app.MapControllers();
+    var scoope = app.Services.CreateScope();
+    var seeder = scoope.ServiceProvider.GetService<RestaurantSeeder>();
+    app.UseMiddleware<ErrorHandlingMiddleware>();
+    app.UseMiddleware<RequestTimeMiddleware>();
+    app.UseHttpsRedirection();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Restaurant API");
+    });
+    app.UseAuthorization();
 
-app.Run();
+    app.MapControllers();
+    seeder.Seed();
+    app.Run();
+}
+catch (Exception exception)
+{
+    // NLog: catch setup errors
+    logger.Error(exception, "Stopped program because of exception");
+    throw;
+}
+finally
+{
+    // Ensure to flush and stop internal timers/threads before application-exit (Avoid segmentation fault on Linux)
+    NLog.LogManager.Shutdown();
+}
+
