@@ -8,10 +8,13 @@ using RestaurantAPI.Middleware;
 using Microsoft.AspNetCore.Identity;
 using FluentValidation;
 using RestaurantAPI.Models;
-using RestaurantAPI.Validators;
+using RestaurantAPI.Models.Validators;
 using FluentValidation.AspNetCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using RestaurantAPI.Authorization;
+using Microsoft.AspNetCore.Authorization;
+using RestaurantAPI.Services;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 try
@@ -29,6 +32,10 @@ try
 
     builder.Services.AddControllers();
     builder.Services.AddFluentValidationAutoValidation();
+   builder.Services.AddScoped<IAuthorizationHandler, CreatedMultipleRestaurantsRequirementHandler>();
+    builder.Services.AddScoped<IAuthorizationHandler, MinimumAgeRequirementHandler>();
+    builder.Services.AddScoped<IAuthorizationHandler, ResourceOperationRequirementHandler>();
+
     builder.Services.AddDbContext<RestaurantDbContext>();
     builder.Services.AddScoped<RestaurantSeeder>();
     builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
@@ -40,6 +47,8 @@ try
     builder.Services.AddScoped<IAccountService, AccountService>();
     builder.Services.AddScoped<IPasswordHasher<User>,PasswordHasher<User>>();
     builder.Services.AddScoped<IValidator<RegisterUserDto>,RegisterUserDtoValidator>();
+    builder.Services.AddScoped<IValidator<RestaurantQuery>, RestaurantQueryValidator>();
+    builder.Services.AddScoped<IUserContextService, UserContextService>();
     builder.Services.AddAuthentication(option =>
     {
         option.DefaultAuthenticateScheme = "Bearer";
@@ -56,6 +65,13 @@ try
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authenticationSettings.JwtKey)),
         };
     });
+    builder.Services.AddAuthorization(options =>
+    {
+        options.AddPolicy("HasNationality", builder => builder.RequireClaim("Nationality", "German", "Polish"));
+        options.AddPolicy("Atleast20", builder => builder.AddRequirements(new MinimumAgeRequirement(20)));
+        options.AddPolicy("CreatedAtleast2Restaurants",
+            builder => builder.AddRequirements(new CreatedMultipleRestaurantsRequirement(2)));
+    });
     builder.Services.AddSingleton(authenticationSettings);
 
 
@@ -65,6 +81,9 @@ try
 
     var scoope = app.Services.CreateScope();
     var seeder = scoope.ServiceProvider.GetService<RestaurantSeeder>();
+    app.UseResponseCaching();
+    app.UseStaticFiles();
+    app.UseCors("FrontEndClient");
     app.UseMiddleware<ErrorHandlingMiddleware>();
     app.UseMiddleware<RequestTimeMiddleware>();
     app.UseAuthentication();
@@ -74,6 +93,8 @@ try
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Restaurant API");
     });
+    app.UseRouting();
+
     app.UseAuthorization();
 
     app.MapControllers();
