@@ -15,6 +15,8 @@ using System.Text;
 using RestaurantAPI.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using RestaurantAPI.Services;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 try
@@ -36,7 +38,7 @@ try
     builder.Services.AddScoped<IAuthorizationHandler, MinimumAgeRequirementHandler>();
     builder.Services.AddScoped<IAuthorizationHandler, ResourceOperationRequirementHandler>();
 
-    builder.Services.AddDbContext<RestaurantDbContext>();
+
     builder.Services.AddScoped<RestaurantSeeder>();
     builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
     builder.Services.AddScoped<IRestaurantService, RestaurantService>();
@@ -49,6 +51,7 @@ try
     builder.Services.AddScoped<IValidator<RegisterUserDto>,RegisterUserDtoValidator>();
     builder.Services.AddScoped<IValidator<RestaurantQuery>, RestaurantQueryValidator>();
     builder.Services.AddScoped<IUserContextService, UserContextService>();
+    builder.Services.AddHttpContextAccessor();
     builder.Services.AddAuthentication(option =>
     {
         option.DefaultAuthenticateScheme = "Bearer";
@@ -73,6 +76,19 @@ try
             builder => builder.AddRequirements(new CreatedMultipleRestaurantsRequirement(2)));
     });
     builder.Services.AddSingleton(authenticationSettings);
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("FrontEndClient", policyBuilder =>
+
+            policyBuilder.AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithOrigins(builder.Configuration["AllowedOrigins"])
+
+            );
+    });
+
+    builder.Services.AddDbContext<RestaurantDbContext>
+        (options => options.UseSqlServer(builder.Configuration.GetConnectionString("RestaurantDbConnection")));
 
 
     var app = builder.Build();

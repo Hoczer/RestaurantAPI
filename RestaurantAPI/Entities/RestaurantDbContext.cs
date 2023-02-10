@@ -5,7 +5,10 @@ namespace RestaurantAPI.Entities
 {
     public class RestaurantDbContext : DbContext
     {
-        string _connectionString = "Server=(LocalDb)\\MSSQLLocalDB;Database=RestaurantDb;Trusted_Connection=True;AttachDbFileName=C:\\Users\\carra\\source\\repos\\RestaurantAPI\\carraRestaurantDb.mdf";
+        public RestaurantDbContext(DbContextOptions<RestaurantDbContext> options) : base(options)
+        {
+
+        }
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Adress> Adresses { get; set; }
         public DbSet<Dish> Dishes { get; set; }
@@ -36,10 +39,6 @@ namespace RestaurantAPI.Entities
                 .Property(d => d.Street)
                 .IsRequired()
                 .HasMaxLength(50);
-        }
-        protected override void OnConfiguring (DbContextOptionsBuilder dbContextOptionsBuilder)
-        {
-            dbContextOptionsBuilder.UseSqlServer(_connectionString);
         }
     }
 }
